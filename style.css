@@ -1,0 +1,159 @@
+/*------- Reset and Common Code Start Here ----*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+  outline: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 90%;
+}
+
+.primary__btn {
+  border: none;
+  border-radius: 5px;
+  padding: 1rem 2rem;
+  cursor: pointer;
+  background-color: rgb(87, 87, 244);
+  color: white;
+  font-weight: bolder;
+  font-size: 1rem;
+}
+
+.secondary__btn {
+  border: none;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  color: blue;
+  border: 1px solid blue;
+  font-weight: bolder;
+}
+
+.lte-color1 {
+  color: rgba(14, 8, 8, 0.699);
+}
+
+.lte-color2 {
+  color: rgba(9, 9, 9, 0.556);
+}
+/*------- Reset and Common Code Ends Here ----*/
+
+/*------- Navbar Style Start Here ----------*/
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem;
+}
+
+.navbar__logo {
+  font-size: 2rem;
+}
+
+.navbar__menu {
+  display: flex;
+  gap: 2rem;
+}
+
+.navbar__menu li a {
+  font-size: 1.5rem;
+}
+
+.hidden__bar {
+  display: none;
+}
+/*------- Navbar Style Ends Here ----------*/
+
+/* Banner Section Style Start Here */
+.banner {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin: 2rem 0;
+  color: white;
+  padding: 0 3rem;
+  min-height: 80vh;
+  background-image: url(images/cover/cover-1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.5);
+  background-blend-mode: darken;
+}
+
+.banner h1 {
+  font-size: 3rem;
+}
+.banner p {
+  font-size: 1.5rem;
+}
+/* Banner Section Style Ends Here */
+
+/* Course Section Style Start Here */
+.course__section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 2rem 0;
+}
+
+.courses {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2rem;
+}
+
+.course {
+  display: flex;
+  align-items: center;
+  gap: 0 2rem;
+  border: 1px solid rgb(199, 188, 188);
+  border-radius: 5px;
+}
+
+.course img {
+  height: 10rem;
+  width: 10rem;
+}
+
+.course__des-price {
+  color: rgb(75, 75, 236);
+}
+/* Course Section Style Ends Here */
+/*---- Responsive Style Start Here ----*/
+
+@media (max-width: 768px) {
+  .hidden {
+    display: none;
+  }
+
+  .hidden__bar {
+    display: block;
+  }
+
+  .courses {
+    display: flex;
+    flex-direction: column;
+  }
+}
