@@ -130,7 +130,7 @@ img {
 .course {
   display: flex;
   align-items: center;
-  gap: 0 2rem;
+  gap: 0 1rem;
   border: 1px solid rgb(199, 188, 188);
   border-radius: 5px;
 }
@@ -375,7 +375,9 @@ img {
     display: flex;
     flex-direction: column;
   }
-
+  .course h1 {
+    font-size: 1rem;
+  }
   .explore__section {
     flex-direction: column;
   }
