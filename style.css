@@ -331,6 +331,30 @@ img {
 }
 /* Company Partner Section Style End Here */
 
+/* Footer Section Style Start Here */
+.footer-section {
+  background-color: rgba(22, 26, 30, 0.542);
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 2rem;
+  color: white;
+}
+
+.footer-section span {
+  color: rgb(32, 94, 209);
+}
+
+.footer-icon {
+  display: flex;
+  gap: 1rem;
+}
+/* Footer Section Style Ends Here */
+
 /*---- Responsive Style Start Here ----*/
 
 @media (max-width: 768px) {
@@ -390,5 +414,13 @@ img {
   .feedback__section h1,
   .faq-section h1 {
     font-size: 1.7rem;
+  }
+
+  .left-angle {
+    right: 96%;
+  }
+
+  .right-angle {
+    left: 95%;
   }
 }
