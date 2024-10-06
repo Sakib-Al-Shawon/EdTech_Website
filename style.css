@@ -25,7 +25,7 @@ img {
 
 .primary__btn {
   border: none;
-  border-radius: 5px;
+  border-radius: 7px;
   padding: 1rem 2rem;
   cursor: pointer;
   background-color: rgb(87, 87, 244);
@@ -36,7 +36,7 @@ img {
 
 .secondary__btn {
   border: none;
-  border-radius: 5px;
+  border-radius: 7px;
   padding: 0.5rem 1rem;
   cursor: pointer;
   color: blue;
@@ -59,6 +59,7 @@ img {
   justify-content: space-between;
   align-items: center;
   padding: 0.5rem;
+  background-color: rgb(121, 179, 227);
 }
 
 .navbar__logo {
@@ -116,6 +117,8 @@ img {
   align-items: center;
   gap: 1rem;
   padding: 2rem 0;
+  background-color: rgb(213, 223, 226);
+  border-radius: 5px;
 }
 
 .courses {
@@ -141,9 +144,201 @@ img {
   color: rgb(75, 75, 236);
 }
 /* Course Section Style Ends Here */
+
+/* Explore Section Style Start Here */
+.explore__section {
+  background-color: rgba(186, 217, 248, 0.542);
+  border-radius: 5px;
+  display: flex;
+  margin: 2rem 0;
+  align-items: center;
+  gap: 2rem;
+}
+
+.explore__section-rating {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 3rem 0 0;
+}
+/* Explore Section Style Ends Here */
+
+/* Register Section Style Start here */
+.regester__section {
+  display: flex;
+  background-color: rgba(21, 114, 237, 0.74);
+  border-radius: 5px;
+  justify-content: space-between;
+  padding: 5rem;
+  color: white;
+  margin: 3rem 0;
+}
+
+.reg-btn {
+  border-radius: 7px;
+  cursor: pointer;
+  color: rgba(21, 114, 237, 0.74);
+  font-size: 1.5rem;
+  border: none;
+  padding: 0.1rem 2rem;
+}
+/* Register Section Style Ends here */
+
+/* Success Section Style Start Here */
+.success__section {
+  background-color: rgb(213, 223, 226);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 3rem;
+  margin: 3rem 0;
+}
+.success__section-Cards {
+  display: flex;
+  gap: 3rem;
+}
+
+.success__section-card {
+  background-color: rgb(255, 255, 255);
+  border-radius: 5px;
+  border: 0.5px solid gray;
+  text-align: center;
+}
+/* Success Section Style ENds Here */
+
+/* FeedBack Section Style Start Here */
+.feedback__section {
+  background-color: rgba(186, 217, 248, 0.542);
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.feedback__section h1 {
+  font-size: 3rem;
+}
+
+.feedback__cards {
+  display: flex;
+  gap: 2rem;
+}
+.feedback__card {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  border: 1px solid gray;
+  position: relative;
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+.f-card-upper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.f-card-upper img {
+  width: 7%;
+}
+
+.rating-color {
+  color: orangered;
+}
+
+.f-card-lower {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.f-card-lower img {
+  width: 10%;
+}
+
+.left-angle {
+  background-color: rgb(177, 215, 231);
+  padding: 0.7rem;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  right: 97.5%;
+}
+
+.right-angle {
+  background-color: rgb(99, 187, 224);
+  padding: 0.7rem;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 97.5%;
+}
+/* FeedBack Section Style End Here */
+
+/* FAQ Section Style Start Here  */
+.faq-section {
+  background-color: rgb(213, 223, 226);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 3rem;
+  margin: 3rem 0;
+}
+
+.faq-section h1 {
+  font-size: 3rem;
+}
+
+.faq-question {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid rgb(184, 178, 178);
+  width: 50%;
+  padding: 1rem 1rem 1rem 3rem;
+  border-radius: 5px;
+}
+
+.faq-ans {
+  width: 50%;
+  padding-left: 1rem;
+}
+/* FAQ Section Style EnDs  Here  */
+
+/* Company Partner Section Style Start Here */
+
+.c-partner {
+  background-color: rgba(186, 217, 248, 0.542);
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem;
+  flex-direction: column;
+  gap: 2rem;
+}
+.c-partner h1 {
+  font-size: 3rem;
+}
+.company-logo {
+  display: flex;
+  gap: 3rem;
+}
+/* Company Partner Section Style End Here */
+
 /*---- Responsive Style Start Here ----*/
 
 @media (max-width: 768px) {
+  .container {
+    margin: 0 auto;
+    max-width: 80%;
+  }
+
   .hidden {
     display: none;
   }
@@ -155,5 +350,45 @@ img {
   .courses {
     display: flex;
     flex-direction: column;
+  }
+
+  .explore__section {
+    flex-direction: column;
+  }
+
+  .explore__section-des {
+    padding: 1rem;
+  }
+
+  .regester__section {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .success__section {
+    text-align: center;
+  }
+
+  .success__section-Cards {
+    flex-direction: column;
+  }
+
+  .feedback__cards {
+    flex-direction: column;
+  }
+
+  .faq-question,
+  .faq-ans {
+    width: 80%;
+  }
+
+  .company-logo {
+    flex-direction: column;
+  }
+
+  .c-partner h1,
+  .feedback__section h1,
+  .faq-section h1 {
+    font-size: 1.7rem;
   }
 }
